@@ -4,4 +4,160 @@ layout: default
 permalink: /
 css: home
 content-id: home
+hero: 
+  title: Welcome to SacConnects
+  text: Your destination for premium board and association recruitment and board effectiveness guidance.
+  cta: 
+    text: About SacConnects
+    link: /about-us/what-is-sacconnects/
+  images: 
+  - src: 
+    alt: 
+    text: SacConnects brings the right people to the table to make things happen!
+  - src: 
+    alt: 
+    text: SacConnects matches your executives to the right boards!   
+about: 
+  title: Nancy Brodovsky
+  text: Nancy Brodovsky is passionate about supporting northern California's civic growth. This passion was developed, nurtured and grown through her active participation as a nonprofit board member and board chair. She gained valuable experience through her active involvement in numerous local, regional and national non profit organizations for thirty-five years. Her large personal and professional network enables her to connect the right people with boards that are providing meaningful services in our communities.
+  cta: 
+    text: More About Nancy
+    link: /about-us/about-the-founder/
+news: 
+  title: SacConnects in the News
+  articles: 
+  - title: Nancy Brodovsky and her client, Kelly Mac Millan, Executive Director of Susan G. Komen of Northern and Central California, talk board requirtment and developement, and breast cancer awareness
+    outlet: Money 105.5FM; Beyond the Numbers 
+    link: https://www.youtube.com/watch?v=pg-ipyxj2xU&ab_channel=MarkBellows
+  - title: 20 Years of American Leadership Forum
+    outlet: KVIE Studio Sacramento
+    link: https://vids.kvie.org/video/2365892111/
+  - title: People on the Move 
+    outlet: Sacramento Business Journal
+    link: https://www.bizjournals.com/sacramento/potmsearch/detail/submission/5408672/Nancy_Brodovsky
+  - title: Perpectives on Leadership
+    outlet: Sacramento Business Journal
+    link: https://www.sacconnects.net/home/perpectives-on-leadership-1-1/
+  - title: Comstock Magazine
+    outlet: Be A Batter Board Member
+    link: https://www.comstocksmag.com/article/be-better-board-member 
+reviews: 
+  title: What Our Clients Say
+  list: 
+  - _clients/touro-university.md
+  - _clients/susan-g-komen-sac-valley.md
+  - _clients/red-rover.md
+  - _clients/nehemiah-community-foundation.md
+  - _clients/ddso.md
+clients: 
+  title: Our Clients
+  list:
+  - name: Sacramento Ballet
+    image: /assets/images/sacramentoballet-logo.png
+  - name: Susan G Komen Sacramento Valley
+    image: /assets/images/susangkomen-logo.png
+  - name: Touro University California
+    image: /assets/images/touro-client-logo.jpg
+  - name: UC Davis School of Education
+    image: /assets/images/ucdavisschoolofed-logo.png
+  - name: Center for Fathers and Families
+    image: /assets/images/CFF_Logo1.jpg
+  - name: Nehemiah Community Foundation
+    image: /assets/images/nehemiah_CommunityFoundationLogo.jpg
+  - name: Eskaton Foundation
+    image: /assets/images/Eskaton.png
+  - name: San Juan Education Foundation
+    image: /assets/images/STARS.png
+  - name: Developmental Disabilities Service Organization
+    image: /assets/images/ddso-1.png
+  - name: Save the American River Association
+    image: /assets/images/SARA-1.png
+  - name: RedRover
+    image: /assets/images/redrover_rgb_tagline_Rmark_test1.png
 ---
+<section id="hero-section">
+  <div class="inner-section">
+    <div class="hero-grid">
+      <div class="hero-col text-col">
+        <h1 class="hero-title">{{ page.hero.title }}</h1>
+        <div class="hero-text">{{ page.hero.text }}</div>
+        <a class="btn secondary" href="{{ page.hero.cta.link }}">{{ page.hero.cta.text }}</a>
+      </div>
+      <div class="hero-col image-col">
+        <div class="hero-slider">
+          {% for image in page.hero.images %}
+
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about-section"> 
+  <div class="inner-section">
+    <h2 class="section-title about-title">{{ page.about.title }}</h2>
+    <div class="about-text">{{ page.about.text }}</div>
+    <a href="btn " href="{{ page.about.cta.link }}">{{ page.about.cta.text }}</a>
+  </div>
+</section>
+<section id="news-section">
+  <div class="inner-section">
+    <h2 class="section-title news-title">{{ page.news.title }}</h2>
+    <div class="articles-list">
+      {% for article in page.news.articles %}
+      <div class="article">
+        <a class="article-link" href="{{ article.link }}">{{ article.title }}</a>
+        <div class="article-outlet">{{ article.outlet }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section id="reviews-section">
+  <div class="inner-section">
+    <h2 class="section-title quotes-title">
+      {{ page.reviews.title }}
+    </h2>
+    <div class="reviews-list">
+      {% for item in page.reviews.list %}
+      {% assign client = site.clients | where: 'path', item | first %} 
+      <div class="review-slide">
+        <div class="review-client heading-3">{{ client.title }}</div>
+        <div class="review-text">
+          {% if client.review.excerpt and client.review.excerpt.size > 0%}
+          {{ client.review.excerpt | append: '...' }}
+          {% else %}
+          {% assign review-text = client.review.text | split: '.' %}
+          {% if review-text[0].size < 30 %}
+          {{ client.review.text | truncate: 130, '...' }}
+          {% else %}
+          {{ review-text[0] | append: '.' }}
+          {% endif %}
+          {% endif %}
+        </div>
+        <div class="review-link">
+          <a href="{{ review.url }}" aria-label="Read the entire review from {{ review.title }}">Read more</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section id="clients-section">
+  <div class="inner-section">
+    <h2 class="section-title">{{ page.clients.title }}</h2>
+    <div class="clients-grid">
+      {% for client in site.clients %}
+      <div class="client-col">
+        {% if client.logo and client.logo.size > 0 %}
+        {% if client.logo contains '.svg'%}
+        <img class="client-logo" src="{{ client.logo }}" alt="{{ client.name }} logo"/> 
+        {% else %}
+        <img class="client-logo" src="{{ client.logo | resize: '160>x120>' }}" alt="{{ client.name }} logo"/> 
+        {% endif %}
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

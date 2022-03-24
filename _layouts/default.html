@@ -22,6 +22,11 @@ layout: compress
     {% assign content-id = page.content-id %}
     {% endif %}
     <!-- Page Content -->
+    {% unless page.path == '_pages/home.html' %}
+    <header>
+        {{page.title }}
+    </header>
+    {% endunless %}
     <main id="{{ content-id }}">
     {{ content }}
     </main>

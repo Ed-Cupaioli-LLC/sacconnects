@@ -1,3 +1,15 @@
 footer {
-  
+  background-color: $black;
+  color: $grey3;
+  padding: 1rem;
+  .footer-body {
+    max-width: $size-large;
+    margin: auto;
+    a {
+      color: $grey4;
+      &:hover {
+        color: $grey3;
+      }
+    }
+  }
 }

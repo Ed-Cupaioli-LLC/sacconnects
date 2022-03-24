@@ -4,7 +4,7 @@ body {
 	padding:0;
 	overflow-x: hidden;
 	font-family: $body-font;
-	font-size: 16px;
+	font-size: 14px;
 	color: $text_color;
 	line-height: 1.5;
 }
@@ -15,51 +15,48 @@ body {
 h1, h2, h3, h4, h5,h6, [class*="heading-"] {
 	font-family: $header-font;
 	margin: 0;
-	font-weight: 700;
+	font-weight: 400;
+	line-height: 1.4;
+	margin-bottom: 1rem;
 	color: inherit;
 }
 h1, .heading-1 {
-	font-size: 4rem;
-	@include bp-small {
-		font-size: 3.5rem;
-	}
+	font-size: 30px;
 }
 
 h2, .heading-2 {
-	font-size:  3.5rem;
-	@include bp-small {
-		font-size: 3rem;
-	}
+	font-size:  24px;
+	
 }
 h3, .heading-3 {
-	font-size: 3rem;
-	@include bp-small {
-		font-size: 2.5rem;
-	}
+	font-size: 20px;
 }
 h4, .heading-4 {
-	font-size: 2.5rem;
-	@include bp-small {
-		font-size: 2.25rem;
-	}
+	font-size: 18px;
+	
 }
 h5, .heading-5 {
-	font-size: 2rem;
+	font-size: 16px;
 }
 h6, .heading-6 {
-	font-size: 1.5rem;
+	font-size: 14px;
 }
 
 .large {
-	font-size: 1.25rem;
+	font-size: 16px;
 }
 .small {
-	font-size: 0.75rem;
+	font-size: 12px;
 }
 
 //Links
 a {
 	text-decoration: none;
+	color: $primary_color;
+	@include transition(color);
+	&:hover {
+		color: $secondary_color;
+	}
 }
 p {
 	a {
@@ -108,4 +105,13 @@ button,.btn {
 
 .hidden {
 	display: none !important;
+}
+
+//section defaults
+section {
+	padding: 2rem;
+	.inner-section {
+		max-width: $size-large;
+		margin: auto;
+	}
 }

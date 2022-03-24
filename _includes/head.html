@@ -1,10 +1,10 @@
-{% if site.gtm %}
+{% if site.data.meta.gtm %}
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','{{ site.gtm }}');</script>
+})(window,document,'script','dataLayer','{{ site.data.meta.gtm }}');</script>
 <!-- End Google Tag Manager -->
 {% endif %}
 <meta charset="utf-8">
@@ -15,22 +15,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Title and Meta Text -->
 {% if page.title %}
 {% capture title  %}
-{{page.title}} | {{site.title}}
+{{page.title}} | {{site.data.meta.title}}
 {% endcapture %}
 {% else %}
-{% assign title = site.title %}
+{% assign title = site.data.meta.title %}
 {% endif %}
 
 {% if page.description %}
 {% assign description = page.description%}
 {% else %}
-{% assign description = site.description %}
+{% assign description = site.data.meta.description %}
 {% endif %}
 
 {% if page.meta_img %}
 {% assign meta_img = page.meta_img %}
 {% else %}
-{% assign meta_img = site.meta_img %}
+{% assign meta_img = site.data.meta.meta_img %}
 {% endif %}
 <title>{{ title }}</title>
 <meta content="{{ description }}" name="description">
@@ -43,40 +43,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:image" content="{{ meta_img }}">
 <!-- Twitter Meta -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="{{ site.twitter }}">
-<meta name="twitter:creator" content="{{ site.twitter }}">
-<meta name="twitter:title" content="{{ site.title }}">
+<meta name="twitter:title" content="{{ title }}">
 <meta name="twitter:description" content="{{ description }}">
 <meta name="twitter:image" content="{{ meta_img }}">
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "{{ site.schema.type }}",
-    "name": "{{ site.schema.name }}",
-    "image": "{{site.url}}{{ site.schema.image }}",
-    "logo": "{{ site.url }}{{site.schema.logo }}",
+    "@type": "{{ site.data.meta.schema.type }}",
+    "name": "{{ site.data.meta.schema.name }}",
+    "image": "{{site.url}}{{ site.data.meta.schema.image }}",
+    "logo": "{{ site.url }}{{site.data.meta.schema.logo }}",
     "url": "{{ site.url }}",
-    "telephone": "{{ site.schema.phone }}",
+    "telephone": "{{ site.data.meta.schema.phone }}",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "{{ site.schema.location.address }}",
-      "addressLocality": "{{ site.schema.location.city }}",
-      "addressRegion": "{{ site.schema.location.state }}",
-      "postalCode": "{{ site.schema.location.zip }}",
+      "streetAddress": "{{ site.data.meta.schema.location.address }}",
+      "addressLocality": "{{ site.data.meta.schema.location.city }}",
+      "addressRegion": "{{ site.data.meta.schema.location.state }}",
+      "postalCode": "{{ site.data.meta.schema.location.zip }}",
       "addressCountry": "USA"
     },
-    {% if site.schema.hours.days != '' %}
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [
-      {{ site.schema.hours.days | split: "," | join: "," }}
+      {{ site.data.meta.schema.hours.days | split: "," | join: "," }}
       ],
-      "opens": "{{ site.schema.hours.open }}",
-      "closes": "{{ site.schema.hours.close }}"
+      "opens": "{{ site.data.meta.schema.hours.open }}",
+      "closes": "{{ site.data.meta.schema.hours.close }}"
     },
-    {% endif %}
-    "sameAs": 
-    {{ site.schema.social | split: "," | join: "," }}
+    "sameAs": {{ site.data.meta.schema.social | split: "," | join: "," }}
+    "founders": [
+      {
+        "@type": "Person",
+        "name": "{{ site.data.meta.schema.founder }}"
+      }
+    ]
     
   }
   </script>

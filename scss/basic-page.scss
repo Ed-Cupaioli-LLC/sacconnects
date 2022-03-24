@@ -1,0 +1,10 @@
+@import "vars.scss";
+@import "mixins.scss";
+#basic-page {
+  
+  #content-section {
+    .inner-section {
+      max-width: 650px;
+    }
+  }
+}
