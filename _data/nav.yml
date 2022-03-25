@@ -1,0 +1,36 @@
+logo: /assets/images/sacconnects-logo.png
+links: 
+- title: About us
+  url: '#'
+  submenu: 
+  - title: What Is SacConnects?
+    url: /about-us/what-is-sacconnects/
+  - title: About The Founder
+    url: /about-us/about-the-founder/
+  - title: How We Work With You
+    url:  /about-us/how-we-work-with-you/  
+  - title: Community Involvement
+    url: /about-us/community-involvement/ 
+  - title: Past Events
+    url: /about-us/past-events/ 
+- title: Services
+  url: '#'
+  submenu: 
+  - title: Board Recruitment
+    url: /services/board-recruitment/
+  - title: Corporate Executives Role in Nonprofits
+    url: /services/corporate-executive-role-in-nonprofits/
+  - title: Board Orientation
+    url: /services/board-orientation/
+  - title: Solicitation Training
+    url: /services/solicitation-training/
+  - title: Executive Coaching for Nonprofits
+    url: /services/executive-coaching-for-nonprofits/
+  - title: New Business Connector
+    url: /services/new-business-connector/
+- title: What People Are Saying
+  url: /what-people-are-saying/
+  submenu:
+- title: Contact us
+  url: 'mailto:nancy@sacconnects.net' 
+  submenu: 

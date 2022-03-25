@@ -1,5 +1,5 @@
 {% assign nav = site.data.nav %}
-<nav>
+<nav id="top-nav">
   <div class="nav-body">
     <div class="nav-col nav-left">
       <a href="/">
@@ -7,7 +7,29 @@
       </a>
     </div>
     <div class="nav-col nav-right">
-
+      <div class="mobile-menu-toggle">
+        <div class="toggle-line top"></div>
+        <div class="toggle-line middle"></div>
+        <div class="toggle-line bottom"></div>
+      </div>
+      <div class="nav-links">
+        {% for link in nav.links %}
+        <div class="link-item large">
+          {% if link.submenu.size > 0 %}
+          <a href="#" class="nav-link submenu-toggle">{{ link.title }} <span class="toggle-arrow"> {% include svg/chevron-right-solid.svg %}</span></a> 
+          <div class="submenu">
+            {% for link in link.submenu %}
+            <div class="submenu-item">
+              <a class="submenu-link" href="{{ link.url }}">{{ link.title }}</a>
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <a href="{{ link.url }}" class="nav-link">{{ link.title }}</a>
+          {% endif%}
+        </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </nav>
