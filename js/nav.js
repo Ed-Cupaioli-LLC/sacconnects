@@ -40,5 +40,11 @@ toggleLinks.forEach(el => {
   el.addEventListener('click', slideToggle);
 });
 
+const mobileNavToggle = document.querySelector(".mobile-menu-toggle");
+mobileNavToggle.addEventListener('click',function(e) {
+  mobileNavToggle.classList.toggle("active");
+  const toggleBox = document.querySelector(".nav-links");
+  toggleBox.classList.toggle('active');
   
+});
   

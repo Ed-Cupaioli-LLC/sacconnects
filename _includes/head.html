@@ -81,10 +81,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
   }
   </script>
-{% if page.slick == true or layout.slick == true %}
-<!-- Slick -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="/css/slick.min.css?{{site.time | date: '%s'}}" />
+{% if page.slider == true or layout.slider == true %}
+<!-- Swiper -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 {% endif %}
 <!-- Base CSS -->
 {%- capture base-css -%}
@@ -114,3 +117,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script> window.fbAsyncInit = function() { FB.init({ appId : '227787841708160', autoLogAppEvents : true, xfbml : true, version : 'v8.0' }); }; </script>
 <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 {% endif %}
+

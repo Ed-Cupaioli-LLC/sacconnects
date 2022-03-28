@@ -1,25 +1,108 @@
 #top-nav {
   padding: 2rem;
+  
+  $nav-height: 112px;
+  height: $nav-height;
+  position: relative;
+  z-index: 1;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 2px;
+    @include box-shadow;
+    left: 0;
+    bottom: 0;
+  }
   .nav-body {
     max-width: $size-large;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     .nav-col {
+      &.nav-left {
+        a {
+          display: inline-block;
+          
+        } 
+        .nav-logo {
+          max-height: 50px;
+        }
+      }
       &.nav-right {
+        
+        .mobile-menu-toggle {
+          display: none;
+          $lineHeight: 2px;
+          $lineMargin: 6px;
+          &:hover {
+            cursor: pointer;
+          }
+          .toggle-line {
+            background-color: $primary_color;
+            height: $lineHeight;
+            width: 28px;
+            @include transition(transform);
+            &.middle {
+              margin: #{$lineMargin} 0;
+            }
+          }
+          &.active {
+            $toggle-translate: #{$lineMargin + $lineHeight};
+            .top {
+              transform: translateY($toggle-translate) rotate(135deg);
+            }
+            .middle {
+              transform: scale(0);
+            }
+            .bottom {
+              transform: translateY(-#{$toggle-translate}) rotate(-135deg);
+            }
+          }
+          @include bp-large {
+            display: block;
+          }
+        }
         .nav-links {
           display: flex;
           align-items: center;
           gap: 3rem;
-
+          @include bp-large {
+            
+            display: block;
+            
+            position: absolute;
+            flex-direction: column;
+            min-width: 150px;
+            
+            overflow: hidden;
+            top: $nav-height;
+            right: 0;
+            background-color: $purple;
+            transform: scaleY(0);
+            transform-origin: top;
+            @include transition(transform);
+            &.active {
+              
+              transform: scaleY(100%);
+            }
+          }  
           .link-item {
             position: relative;
-            
+            @include bp-large {
+              padding: 0.5rem 2rem;
+              
+            }  
             .nav-link {
               display: inline-block;
-              
               font-weight: 600;
+              @include bp-large {
+                color: $white;
+              }
               svg {
                 height: 14px;
                 width: auto;
@@ -29,17 +112,29 @@
                 fill: $primary_color;
                 @include transition(fill, transform);
                 backface-visibility: hidden;
+                @include bp-large {
+                  fill: $white;
+                }
               }
               &.active,&:hover {
                 color: $secondary_color;
+                @include bp-large {
+                  color: $white;
+                }  
                 svg {
                   fill: $secondary_color;
+                  @include bp-large {
+                    fill: $white;
+                  }
                 }
               }
               &.active {
                 svg {
                   fill: $secondary_color;
                   transform: rotate(90deg);
+                  @include bp-large {
+                    fill: $white;
+                  }
                 }
               }
             }
@@ -54,9 +149,23 @@
               font-size: 14px;
               left: -2rem;
               font-weight: 600;
+              @include bp-large {
+                position: relative;
+                left: 1rem;
+                background-color: $purple;
+                
+                box-shadow: none;
+              }
               .submenu-item {
                 padding: 1rem;
                 border-bottom: 1px solid #CDCDCD;
+                @include bp-large {
+                  border-bottom: none;
+                  padding: 0.5rem 1rem;
+                  a {
+                    color: $white;
+                  }
+                }  
               }
             }  
           }
