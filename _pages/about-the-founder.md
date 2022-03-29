@@ -1,5 +1,6 @@
 ---
 title: About the Founder
+permalink: /about-us/about-the-founder/
 ---
 ## Nancy Brodovsky
 

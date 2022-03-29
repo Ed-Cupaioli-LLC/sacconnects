@@ -57,7 +57,10 @@ collections:
     widget: 'string'
   - name: 'body'
     label: 'Body'
-    widget: 'markdown'                      
+    widget: 'markdown' 
+  - name: 'permalink'
+    label: 'Permalink'
+    hint: 'Completely optional since the link will automatically generate when you create it based on the title. Just specify the page path like so: /my-page-permalink/'                        
 - name: 'home'
   label: 'Home Page'
   create: false
@@ -66,7 +69,7 @@ collections:
   files:
     - label: 'Home Page'
       name: 'home'
-      file: '_pages/home.md'
+      file: '_pages/home.html'
       fields:
         - name: 'hero'
           label: 'Hero Section'
@@ -95,7 +98,7 @@ collections:
           - name: 'images'
             label: 'Image slider'
             hint: 'The image slider in the hero section. Add slides by clicking [button]'
-            widget: 'object'
+            widget: 'list'
             fields: 
             - name: 'src'
               label: 'Image'
@@ -135,7 +138,67 @@ collections:
             - name: 'link'
               label: 'Link'
               hint: 'Link URL'
-              widget: 'string'  
+              widget: 'string'
+        - name: 'news'
+          label: 'News section'
+          hint: "Add links to media you're featured in here"
+          widget: 'object'
+          fields: 
+          - name: 'title'
+            label: "Title"
+            hint: 'The title text that appears at the top of the page'
+            widget: 'string'
+          - name: 'articles'
+            label: 'Media'
+            hint: 'Add a new link to media or edit existing links here'
+            widget: 'list'
+            fields: 
+            - name: 'title'
+              label: 'Title'
+              widget: 'string'
+              hint: 'Title of the media'
+            - name: 'outlet'
+              label: 'Outlet'
+              hint: 'Press outlet of the media'
+              widget: 'string'
+            - name: 'link'
+              label: 'Link'
+              widget: 'string'
+              hint: 'Link to the media. Link will be applied to the media title'       
+        - name: 'reviews'
+          label: 'Reviews section'
+          hint: 'Add featured reviews from your clients here'
+          widget: 'object'
+          fields: 
+          - name: 'title'
+            label: 'Review section title'
+            widget: 'string'
+          - name: 'list'
+            label: 'Reviews list'
+            hint: 'Add or delete reviews here. Just select which client you want and order however you wish and the review excerpt or the first sentence of the review will appear on the homepage.'
+            widget: 'list'
+            field:
+            - collection: '_clients/'
+              value_field: 'title'
+              search_fields: 'title'
+              widget: 'relation'
+              name: 'client'
+        - name: 'clients'
+          label: 'Clients section'
+          hint: 'This section automatically feeds in all the clients you have added in alphabetical order. All you need to so here is update a title.'
+          widget: 'object'
+          fields:
+          - name: 'title'
+            label: 'Client section title'
+            widget: 'string'
+                
+                  
+
+                
+
+
+               
+
         
 
 
