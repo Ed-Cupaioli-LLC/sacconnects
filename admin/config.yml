@@ -3,9 +3,9 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: 'assets/images'
 collections:
-- name: 'pages'
-  label: 'Pages'
-  folder: '_pages/'
+- name: 'clients'
+  label: 'Clients'
+  folder: '_clients/'
   create: true
   slug: '{{ slug }}'
 editor:
