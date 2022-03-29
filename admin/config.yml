@@ -10,56 +10,43 @@ collections:
   editor:
     preview: true
   fields: 
-    - { 
-        label: 'Title',
-        name: 'title',
-        required: true,
-        widget: 'string'
-      }
-    - { 
-        label: 'Logo',
-        name: 'logo',
-        widget: 'image'
-      }
-    - { 
-        label: 'Review',
-        name: 'review',
-        widget: 'object',
-        fields:
-        - {
-            label: 'Review text',
-            name: 'text',
-            widget: 'markdown'
-          }
-        - {
-            label: 'Excerpt', 
-            name: 'excerpt',
-            hint: 'Optional field if you want to use a select line of text instead of the first sentence of the review on the homepage.',
-            widget: 'markdown'
-          }
-        - {
-            label: 'source',
-            widget: 'object',
-            hint: 'Add a name, title, and organization for who gave the review. If none is specified, then it will default to the client title.',
-            fields: 
-            - {
-                label: 'Name',
-                name: 'name',
-                widget: 'string'
-              }
-            - {
-                label: 'Title',
-                name: 'title',
-                widget: 'string'
-              }
-            - {
-                label: 'Organization',
-                name: 'org',
-                widget: 'string',
-                hint: 'Alternate organization name for the client. If none is specified, then it will default to the client title.'
-              }    
-          }    
-      }  
+    - label: 'Title'
+      name: 'title'
+      required: true
+      widget: 'string'
+    - label: 'Logo'
+      name: 'logo'
+      widget: 'image'
+      
+    - label: 'Review'
+      name: 'review'
+      widget: 'object'
+      collapsed: true
+      fields:
+        - label: 'Review text'
+          name: 'text'
+          widget: 'markdown'
+        - label: 'Excerpt' 
+          name: 'excerpt'
+          hint: 'Optional field if you want to use a select line of text instead of the first sentence of the review on the homepage.'
+          widget: 'markdown'
+        - label: 'source'
+          widget: 'object'
+          hint: 'Add a name, title, and organization for who gave the review. If none is specified, then it will default to the client title.'
+          fields: 
+          - label: 'Name'
+            name: 'name'
+            widget: 'string'
+          - label: 'Title'
+            name: 'title'
+            widget: 'string'    
+          - label: 'Organization'
+            name: 'org'
+            widget: 'string'
+            hint: 'Alternate organization name for the client. If none is specified, then it will default to the client title.'
+                 
+              
+      
 
 # - name: 'custom-pages'
 #   label: 'Custom Pages'
