@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  branch: main 
 media_folder: 'assets/images'
 collections:
 - name: 'clients'
@@ -8,7 +8,7 @@ collections:
   folder: '_clients/'
   create: true
   editor:
-    preview: true
+    preview: false
   fields: 
     - label: 'Title'
       name: 'title'
@@ -44,18 +44,106 @@ collections:
               name: 'org'
               widget: 'string'
               hint: 'Alternate organization name for the client. If none is specified, then it will default to the client title.'
-                 
-              
-      
+- name: 'pages'
+  label: 'Pages'
+  folder: '_pages/'
+  create: true
+  editor: 
+    preview: true
+  fields:
+  - name: 'title'
+    label: 'Title'
+    required: true
+    widget: 'string'
+  - name: 'body'
+    label: 'Body'
+    widget: 'markdown'                      
+- name: 'home'
+  label: 'Home Page'
+  create: false
+  editor:
+    preview: false
+  files:
+    - label: 'Home Page'
+      name: 'home'
+      file: '_pages/home.md'
+      fields:
+        - name: 'hero'
+          label: 'Hero Section'
+          hint: 'The section at the top of the page with the welcome message and the image slider'
+          widget: 'object'
+          fields:
+          - name: 'title'
+            label: 'Title'
+            widget: 'string'
+            hint: 'The title text at the top of the hero section'
+          - name: 'text'
+            label: 'Text'
+            widget: 'textarea'
+            hint: 'The text below the title of the hero section'
+          - name: 'cta'
+            label: 'Call to Action'
+            widget: 'object'
+            hint: 'The text link below the text of the hero section'
+            fields: 
+            - name: 'text'
+              label: 'Text'
+              widget: 'string'
+            - name: 'link'
+              label: 'Link'
+              widget: 'string'
+          - name: 'images'
+            label: 'Image slider'
+            hint: 'The image slider in the hero section. Add slides by clicking [button]'
+            widget: 'object'
+            fields: 
+            - name: 'src'
+              label: 'Image'
+              widget: 'image'
+            - name: 'alt'
+              label: 'Image description (alt) text'
+              hint: 'Description or alt text is a way to describe an image to screen readers for people with disabilities. This is required by the ADA and will help your search ranking.'
+              widget: 'string'
+            - name: 'text'
+              label: 'Text'
+              hint: 'The text that appears in the purple box in the bottom-right corner of the slide.'  
+        - name: 'about'
+          label: 'About Section'
+          hint: 'The section below the hero where you talk about yourself.'
+          widget: 'object'
+          fields:
+          - name: 'title'
+            label: 'Title'
+            hint: 'Title text of the about section'
+            widget: 'string' 
+          - name: 'text'
+            label: 'Text'
+            hint: 'Text for the about section'
+            widget: 'textarea'
+          - name: 'image'
+            label: 'Image' 
+            hint: 'Image for the about section. Alt text already configured as "headshot of Nancy Brodovsky".'  
+          - name: 'cta'
+            label: 'Call to Action'
+            hint: 'Link text at the bottom of the about section'  
+            widget: 'object'
+            fields:
+            - name: 'text'
+              label: 'Text'
+              hint: 'Link text. No need to add the arrows, they are automatically generated.'
+              widget: 'string'
+            - name: 'link'
+              label: 'Link'
+              hint: 'Link URL'
+              widget: 'string'  
+        
 
-# - name: 'custom-pages'
-#   label: 'Custom Pages'
-#   editor:
-#     preview: false
-#   files:
-#     - label: 'Home Page'
-#       name: 'home'
-#       file: '_pages/home.md'
-#       fields:
-#         - 
+
+              
+              
+
+
+
+
+
         
