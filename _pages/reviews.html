@@ -1,0 +1,45 @@
+---
+title: What People Are Saying
+permalink: /what-people-are-saying/
+content-id: reviews-page
+css: reviews
+---
+<section id="reviews-section">
+  <div class="inner-section">
+    {% assign clients = site.clients | sort: 'title' %}
+    {% for client in clients  %}
+    {% assign review = client.review %}
+    <div class="review">
+      {% if client.logo and client.logo.size > 0 %}
+      {% if client.logo contains '.svg' %}
+      <img class="review-logo" src="{{ client.logo }}"/>
+      {% else %}
+      <img class="review-logo" src="/{{ client.logo | resize: '250>x120>' }}"/>
+      {% endif %}
+      {% else %}
+      <div class="review-client heading-2">{{ client.title }}</div>
+      {% endif %}
+      <div class="review-text">
+        {{ review.text | append: "&rdquo;" | prepend: "&ldquo;" | markdownify }}
+      </div>
+      <div class="review-source">
+        {%- if review.source.name and review.source.name.size > 0 -%}
+        <span class="review-source-name">{{ review.source.name }}</span>
+        {%- endif -%}
+        {%- if review.source.title and review.source.title.size > 0 -%}
+        , <span class="review-source-title">{{ review.source.title }}</span>
+        {%- endif -%}
+        <div class="review-source-org">
+          {% if review.source.org and review.source.org.size > 0 %}
+          {{ review.source.org }}
+          {% else %}
+          {{ client.title }}
+          {% endif %}
+        </div>
+        
+      </div>
+      
+    </div>
+    {% endfor %}
+  </div>
+</section>

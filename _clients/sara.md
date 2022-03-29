@@ -1,6 +1,6 @@
 ---
 title: Save the American River Association (SARA)
-logo: ''
+logo: '/assets/images/SARA-1.png'
 site: 'http://www.sarariverwatch.org/'
 review: 
   text: |-

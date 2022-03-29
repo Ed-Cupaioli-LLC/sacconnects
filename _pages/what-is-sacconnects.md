@@ -3,6 +3,9 @@ title: What Is SacConnects?
 layout: basic-page
 permalink: /about-us/what-is-sacconnects/
 ---
+![Nancy Brodovsky sitting on a panel with other professional women](/assets/images/what-is-sacconnects-banner.jpg)
+*Photo Credit: Phillip Kamel*
+
 ## Great People = Great Boards = Great Nonprofits
 
 SacConnects is a boutique consulting firm that focuses on helping nonprofit boards find the most relevant talent to help drive their organization's mission forward. We do this by understanding the skill-sets the organization needs and matches individuals from our network who are the best fit. We also facilitate the successful integration of these new members with our customized board member orientation program. In addition, we provide training on effective fundraising techniques and running more effective board meetings.

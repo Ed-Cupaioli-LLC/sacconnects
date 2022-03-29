@@ -14,7 +14,7 @@
     }
 }
 //box shadow
-$default-shadow: 0px 3px 5px rgba(100, 100, 100, 0.5);
+$default-shadow: 0px 3px 5px rgba(#646464, 0.5);
 @mixin box-shadow($prop: $default-shadow) {
   -webkit-box-shadow: $prop;
   -moz-box-shadow: $prop;

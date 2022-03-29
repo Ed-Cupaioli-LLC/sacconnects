@@ -26,7 +26,10 @@ scripts:
     <!-- Page Content -->
     {% unless page.path == '_pages/home.html' %}
     <header>
-        {{page.title }}
+        <div class="header-content">
+            <h1>{{page.title }}</h1>
+        </div>
+        
     </header>
     {% endunless %}
     <main id="{{ content-id }}">

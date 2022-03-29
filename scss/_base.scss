@@ -18,7 +18,8 @@ h1, h2, h3, h4, h5,h6, [class*="heading-"] {
 	font-weight: 400;
 	line-height: 1.4;
 	margin-bottom: 1rem;
-	color: inherit;
+	color: $grey1;
+	
 }
 h1, .heading-1 {
 	font-size: 30px;
@@ -113,5 +114,17 @@ section {
 	.inner-section {
 		max-width: $size-large;
 		margin: auto;
+	}
+}
+header {
+	padding: 2rem;
+	background-color: $grey4;
+	.header-content {
+		max-width: $size-large;
+		margin: auto;
+		h1 {
+			margin-bottom: 0;
+			font-size: 20px;
+		}
 	}
 }

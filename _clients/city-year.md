@@ -1,6 +1,6 @@
 ---
 title: City Year
-logo: ''
+logo: '/assets/images/city-year-logo.svg'
 site: 'https://www.cityyear.org/sacramento/'
 review: 
   text: |- 
