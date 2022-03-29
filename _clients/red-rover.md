@@ -1,6 +1,6 @@
 ---
 title: RedRover
-logo: '/assets/images/redrover_rgb_tagline_Rmark_test1.png'
+logo: '/assets/images/redrover_rgb_tagline_Rmark.png'
 site: 'https://redrover.org/'
 review: 
   text: |-

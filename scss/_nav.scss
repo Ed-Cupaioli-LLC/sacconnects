@@ -4,7 +4,7 @@
   $nav-height: 112px;
   height: $nav-height;
   position: relative;
-  z-index: 1;
+  z-index: 5;
   
   &::after {
     content: '';
@@ -142,6 +142,7 @@
               height: 0;
               overflow: hidden;
               position: absolute;
+              z-index: 5;
               @include transition(height);
               background-color: $white;
               min-width: 200px;

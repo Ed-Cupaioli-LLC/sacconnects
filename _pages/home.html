@@ -3,6 +3,9 @@ title: Home Page
 layout: default
 permalink: /
 css: home
+slider: true
+scripts:
+- home
 content-id: home
 hero: 
   title: Welcome to SacConnects
@@ -11,22 +14,23 @@ hero:
     text: About SacConnects
     link: /about-us/what-is-sacconnects/
   images: 
-  - src: 
-    alt: 
+  - src: /assets/images/linkedin-sales-solutions-qbDiSp5IqxA-unsplash.jpg
+    alt: two professional women talking at a standup desk in an office setting
     text: SacConnects brings the right people to the table to make things happen!
-  - src: 
-    alt: 
+  - src: /assets/images/cowomen-cKQkMFzXHAI-unsplash.jpg
+    alt: a group of three professional women meeting around a table
     text: SacConnects matches your executives to the right boards!   
 about: 
   title: Nancy Brodovsky
   text: Nancy Brodovsky is passionate about supporting northern California's civic growth. This passion was developed, nurtured and grown through her active participation as a nonprofit board member and board chair. She gained valuable experience through her active involvement in numerous local, regional and national non profit organizations for thirty-five years. Her large personal and professional network enables her to connect the right people with boards that are providing meaningful services in our communities.
+  image: /assets/images/NancyBrodovsky-small-new.jpg
   cta: 
     text: More About Nancy
     link: /about-us/about-the-founder/
 news: 
   title: SacConnects in the News
   articles: 
-  - title: Nancy Brodovsky and her client, Kelly Mac Millan, Executive Director of Susan G. Komen of Northern and Central California, talk board requirtment and developement, and breast cancer awareness
+  - title: Board Recruitment and Development, and Breast Cancer Awareness
     outlet: Money 105.5FM; Beyond the Numbers 
     link: https://www.youtube.com/watch?v=pg-ipyxj2xU&ab_channel=MarkBellows
   - title: 20 Years of American Leadership Forum
@@ -81,38 +85,54 @@ clients:
       <div class="hero-col text-col">
         <h1 class="hero-title">{{ page.hero.title }}</h1>
         <div class="hero-text">{{ page.hero.text }}</div>
-        <a class="btn secondary" href="{{ page.hero.cta.link }}">{{ page.hero.cta.text }}</a>
+        <a href="{{ page.hero.cta.link }}" class="hero-cta">{{ page.hero.cta.text }} »</a>
       </div>
       <div class="hero-col image-col">
-        <div class="hero-slider">
-          {% for image in page.hero.images %}
-
-          {% endfor %}
+        <div class="swiper hero-slider">
+          <div class="swiper-wrapper">
+            {% for image in page.hero.images  %}
+            <div class="swiper-slide hero-slide">
+              <img src="{{ image.src | resize: '512x' }}" alt="{{ image.alt }}"class="hero-slide-image" />
+              <div class="hero-slide-text">{{ image.text }}</div>
+            </div>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+{% include separator.html %}
 <section id="about-section"> 
   <div class="inner-section">
-    <h2 class="section-title about-title">{{ page.about.title }}</h2>
-    <div class="about-text">{{ page.about.text }}</div>
-    <a href="btn " href="{{ page.about.cta.link }}">{{ page.about.cta.text }}</a>
+    <div class="about-grid">
+      <div class="about-col image-col">
+        <img src="{{ page.about.image | resize: '400x' }}" alt="headshot of Nancy Brodovsky"/>
+      </div>
+      <div class="about-col text-col">
+        <h2 class="section-title about-title">{{ page.about.title }}</h2>
+        <div class="about-text">{{ page.about.text }}</div>
+        <a class="about-cta" href="{{ page.about.cta.link }}">{{ page.about.cta.text }} »</a>
+      </div>
+    </div>
+    
   </div>
 </section>
+{% include separator.html %}
 <section id="news-section">
   <div class="inner-section">
     <h2 class="section-title news-title">{{ page.news.title }}</h2>
     <div class="articles-list">
       {% for article in page.news.articles %}
       <div class="article">
-        <a class="article-link" href="{{ article.link }}">{{ article.title }}</a>
+        <a class="article-link large" href="{{ article.link }}">{{ article.title }}</a>
         <div class="article-outlet">{{ article.outlet }}</div>
       </div>
       {% endfor %}
     </div>
   </div>
 </section>
+{% include separator.html %}
 <section id="reviews-section">
   <div class="inner-section">
     <h2 class="section-title quotes-title">
@@ -121,10 +141,17 @@ clients:
     <div class="reviews-list">
       {% for item in page.reviews.list %}
       {% assign client = site.clients | where: 'path', item | first %} 
-      <div class="review-slide">
-        <div class="review-client heading-3">{{ client.title }}</div>
+      <div class="review">
+        {% if client.logo and client.logo.size > 0 %}
+        {% if client.logo contains '.svg'%}
+        <img class="client-logo" src="{{ client.logo }}" alt="{{ client.name }} logo"/> 
+        {% else %}
+        <img class="client-logo" src="{{ client.logo | resize: '250>x120>' }}" alt="{{ client.name }} logo"/> 
+        {% endif %}
+        {% endif %}
         <div class="review-text">
-          {% if client.review.excerpt and client.review.excerpt.size > 0%}
+          {% capture review %}
+          {% if client.review.excerpt and client.review.excerpt.size > 0 %}
           {{ client.review.excerpt | append: '...' }}
           {% else %}
           {% assign review-text = client.review.text | split: '.' %}
@@ -134,29 +161,35 @@ clients:
           {{ review-text[0] | append: '.' }}
           {% endif %}
           {% endif %}
+          {% endcapture %}
+          &ldquo;{{ review | strip }}&rdquo;
         </div>
+        <div class="review-client large">&ndash; {{ client.title }}</div>
         <div class="review-link">
-          <a href="{{ review.url }}" aria-label="Read the entire review from {{ review.title }}">Read more</a>
+          <a href="/what-people-are-saying/?client={{ client.title | url_encode }}" aria-label="Read the entire review from {{ review.title }}">Read more »</a>
         </div>
       </div>
       {% endfor %}
     </div>
   </div>
 </section>
+{% include separator.html %}
 <section id="clients-section">
   <div class="inner-section">
     <h2 class="section-title">{{ page.clients.title }}</h2>
     <div class="clients-grid">
       {% for client in site.clients %}
+      {% if client.logo and client.logo.size > 0 %}
       <div class="client-col">
-        {% if client.logo and client.logo.size > 0 %}
-        {% if client.logo contains '.svg'%}
-        <img class="client-logo" src="{{ client.logo }}" alt="{{ client.name }} logo"/> 
-        {% else %}
-        <img class="client-logo" src="{{ client.logo | resize: '160>x120>' }}" alt="{{ client.name }} logo"/> 
-        {% endif %}
-        {% endif %}
+        <a class="client-link" href="{{ client.site }}">
+          {% if client.logo contains '.svg'%}
+          <img class="client-logo" src="{{ client.logo }}" alt="{{ client.name }} logo"/> 
+          {% else %}
+          <img class="client-logo" src="{{ client.logo | resize: '160>x120>' }}" alt="{{ client.name }} logo"/> 
+          {% endif %}
+        </a>
       </div>
+      {% endif %}
       {% endfor %}
     </div>
   </div>
