@@ -8,13 +8,13 @@ collections:
   folder: '_clients/'
   create: true
   slug: '{{ slug }}'
-editor:
-  preview: true
-fields: 
-  - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'basic-page' }
-  - { label: 'Title', name: 'title', widget: 'string' }
-  - { label: 'URL Path', name: 'permalink', widget: 'string' }
-  - { label: 'Body', name: 'body', widget: 'markdown' }
+  editor:
+    preview: true
+  fields: 
+    - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'basic-page' }
+    - { label: 'Title', name: 'title', widget: 'string' }
+    - { label: 'URL Path', name: 'permalink', widget: 'string' }
+    - { label: 'Body', name: 'body', widget: 'markdown' }
 # - name: 'custom-pages'
 #   label: 'Custom Pages'
 #   editor:
