@@ -11,7 +11,7 @@ scripts:
     {% assign clients = site.clients | sort: 'title' %}
     {% for client in clients  %}
     {% assign review = client.review %}
-    <div class="review">
+    <div class="review" data-review="{{ client.title }}">
       {% if client.logo and client.logo.size > 0 %}
       {% if client.logo contains '.svg' %}
       <img class="review-logo" src="{{ client.logo }}"/>
