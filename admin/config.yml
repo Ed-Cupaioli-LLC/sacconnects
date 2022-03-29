@@ -17,7 +17,6 @@ collections:
     - label: 'Logo'
       name: 'logo'
       widget: 'image'
-      
     - label: 'Review'
       name: 'review'
       widget: 'object'
@@ -31,19 +30,20 @@ collections:
           hint: 'Optional field if you want to use a select line of text instead of the first sentence of the review on the homepage.'
           widget: 'markdown'
         - label: 'source'
+          name: 'review'
           widget: 'object'
           hint: 'Add a name, title, and organization for who gave the review. If none is specified, then it will default to the client title.'
           fields: 
-          - label: 'Name'
-            name: 'name'
-            widget: 'string'
-          - label: 'Title'
-            name: 'title'
-            widget: 'string'    
-          - label: 'Organization'
-            name: 'org'
-            widget: 'string'
-            hint: 'Alternate organization name for the client. If none is specified, then it will default to the client title.'
+            - label: 'Name'
+              name: 'name'
+              widget: 'string'
+            - label: 'Title'
+              name: 'title'
+              widget: 'string'    
+            - label: 'Organization'
+              name: 'org'
+              widget: 'string'
+              hint: 'Alternate organization name for the client. If none is specified, then it will default to the client title.'
                  
               
       
