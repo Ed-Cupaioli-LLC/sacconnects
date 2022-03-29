@@ -183,11 +183,12 @@ collections:
             hint: 'Add or delete reviews here. Just select which client you want and order however you wish and the review excerpt or the first sentence of the review will appear on the homepage.'
             widget: 'list'
             fields:
-            - collection: '_clients/'
+            - name: 'client'
+              label: 'Client'
+              collection: '_clients/'
+              search_fields: ['title']
               value_field: 'title'
-              search_fields: 'title'
               widget: 'relation'
-              name: 'client'
         - name: 'clients'
           label: 'Clients section'
           hint: 'This section automatically feeds in all the clients you have added in alphabetical order. All you need to so here is update a title.'
