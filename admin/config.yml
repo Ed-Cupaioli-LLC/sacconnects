@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: 'assets/images'
+collections:
+- name: 'pages'
+  label: 'Pages'
+  folder: '_pages/'
+  create: true
+  slug: '{{ permalink }}'
+editor:
+  preview: true
+fields: 
+  - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'basic-page' }
+  - { label: 'Title', name: 'title', widget: 'string' }
+  - { label: 'URL Path', name: 'permalink', widget: 'string' }
+  - { label: 'Body', name: 'body', widget: 'markdown' }
+# - name: 'custom-pages'
+#   label: 'Custom Pages'
+#   editor:
+#     preview: false
+#   files:
+#     - label: 'Home Page'
+#       name: 'home'
+#       file: '_pages/home.md'
+#       fields:
+#         - 
+        
