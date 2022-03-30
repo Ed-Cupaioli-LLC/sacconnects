@@ -3,16 +3,19 @@
 #home {
   #hero-section {
     .hero-grid {
-      display: grid;
+      display: flex;
+      flex-flow: row nowrap;
       align-items: center;
-      grid-template-columns: repeat(2,50%);
       gap: 2rem;
-
       @include bp-large {
-        grid-template-columns: repeat(1,100%);;
-        
+        flex-flow: row wrap;
       }
       .hero-col {
+        width: 50%;
+        @include bp-large {
+          width: 100%;
+          
+        }  
         &.text-col {
           .hero-text {
             margin-bottom: 1rem;
@@ -22,10 +25,13 @@
           }
         }
         &.image-col {
+          max-width: 512px;
+          margin: auto;
           .hero-slider {
-            max-width: 512px;
+            
             .hero-slide {
               position: relative;
+              
               &-text {
                 position: absolute;
                 bottom: 0;
@@ -33,6 +39,12 @@
                 background-color: $purple;
                 color: $white;
                 padding: 1rem;
+              }
+              &-image {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                
               }
             }
           }

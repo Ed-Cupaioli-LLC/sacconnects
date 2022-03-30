@@ -110,7 +110,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% endif %}
 
 <!-- Favicon -->
-<link rel="icon" href="{{ site.favicon | relative_url }}">
+<link rel="icon" href="{{ site.data.meta.favicon | relative_url }}">
 {% if page.social-share == true or layout.social-share == true %}
 <!-- Social Share -->
 <script type="text/javascript" async="" src="https://platform.twitter.com/widgets.js"></script>
