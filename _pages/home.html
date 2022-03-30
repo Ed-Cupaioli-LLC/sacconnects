@@ -117,7 +117,7 @@ clients:
     </h2>
     <div class="reviews-list">
       {% for item in page.reviews.list %}
-      {% assign client = site.clients | where: 'path', item | first %} 
+      {% assign client = site.clients | where: 'path', item.client | first %} 
       <div class="review">
         {% if client.logo and client.logo.size > 0 %}
         {% if client.logo contains '.svg'%}
