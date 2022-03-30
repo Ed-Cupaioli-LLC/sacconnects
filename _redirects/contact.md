@@ -1,4 +1,4 @@
 ---
 permalink: '/contact/'
-redirect_url: /
+redirect_url: '/'
 ---

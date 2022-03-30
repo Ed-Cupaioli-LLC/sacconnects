@@ -1,6 +1,7 @@
 ---
 title: San Juan Education Foundation
 logo: '/assets/images/sjef-logo_sm.png'
+site: https://www.sanjuaneducationfoundation.org/
 review: 
   text: Nancy does a wonderful job of getting to know non-profits so that she can find Board members who are passionate about making a contribution and who are eager to support the organization’s mission.
   excerpt: ''
