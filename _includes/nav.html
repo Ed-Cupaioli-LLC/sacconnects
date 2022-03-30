@@ -31,7 +31,12 @@
             {% endfor %}
           </div>
           {% else %}
-          <a href="{{ link.url }}" class="nav-link">{{ link.title }}</a>
+          
+          {% capture page-id %}_pages/{{ link.url }}.md{% endcapture %}
+          <!-- {{ page-id }} -->
+          {% assign link-item = site.pages | where: 'path', page-id | first %}
+
+          <a href="{{ link-item.url }}" class="nav-link">{{ link.title }}</a>
           {% endif%}
         </div>
         {% endfor %}

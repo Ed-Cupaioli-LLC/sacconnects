@@ -18,7 +18,7 @@ links:
       - url: executive-coaching-for-nonprofits
       - url: new-business-connector
   - title: What People Are Saying
-    url: what-people-are-saying
+    url: 'reviews'
     submenu: null
   - title: Contact us
     custom-link: mailto:nancy@sacconnects.net
