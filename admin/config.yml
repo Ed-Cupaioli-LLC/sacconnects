@@ -190,7 +190,7 @@ collections:
               collection: 'clients'
               search_fields: [title]
               display_fields: [title]
-              value_field: "title"
+              value_field: "{{slug}}"
               widget: 'relation'
         - name: 'clients'
           label: 'Clients section'
