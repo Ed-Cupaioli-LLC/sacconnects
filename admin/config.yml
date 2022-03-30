@@ -185,7 +185,7 @@ collections:
             fields:
             - name: 'client'
               label: 'Client'
-              collection: '_clients/'
+              collection: 'clients'
               search_fields: ['title']
               value_field: 'title'
               widget: 'relation'
