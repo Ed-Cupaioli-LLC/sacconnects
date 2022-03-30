@@ -210,6 +210,8 @@ collections:
   label: 'Menus and site information'
   hint: 'Edit the navigation, footer, and site information here.'
   preview: false
+  collection: '_data/'
+  create: false
   files: 
   - name: 'nav'
     label: 'Navigation menu'

@@ -1,5 +1,5 @@
 ---
-title: How We Work with Nonprofits
+title: How We Work with You
 permalink: /about-us/how-we-work-with-you/
 ---
 ## How We Work with Nonprofits
