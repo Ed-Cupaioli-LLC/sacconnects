@@ -58,10 +58,10 @@ hero:
 reviews:
   title: What Our Clients Say
   list:
-    - client: _clients/susan-g-komen-sac-valley.md
-    - client: _clients/red-rover.md
-    - client: _clients/nehemiah-community-foundation.md
-    - client: _clients/ddso.md
+    - client: susan-g-komen-sac-valley
+    - client: red-rover
+    - client: nehemiah-community-foundation
+    - client: ddso
     - client: city-year
 ---
 <section id="hero-section">
@@ -125,7 +125,8 @@ reviews:
     </h2>
     <div class="reviews-list">
       {% for item in page.reviews.list %}
-      {% assign client = site.clients | where: 'path', item.client | first %} 
+      {%- capture client-id -%}/clients/{{item.client}}{% endcapture %}
+      {% assign client = site.clients | where: 'id', client-id | first %} 
       <div class="review">
         {% if client.logo and client.logo.size > 0 %}
         {% if client.logo contains '.svg'%}

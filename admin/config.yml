@@ -188,8 +188,8 @@ collections:
             - name: 'client'
               label: 'Client'
               collection: 'clients'
-              search_fields: [title]
-              display_fields: [title]
+              search_fields: ["title"]
+              display_fields: ["title"]
               value_field: "{{slug}}"
               widget: 'relation'
         - name: 'clients'
