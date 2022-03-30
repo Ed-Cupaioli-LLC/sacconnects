@@ -1,24 +1,24 @@
 logo: /assets/images/sacconnects-logo.png
-links: 
-- title: About us
-  url: ''
-  submenu: 
-  - url: what-is-sacconnects
-  - url: about-the-founder
-  - url: how-we-work-with-you
-  - url: community-involvement
-  - url: past-events
-- title: Services
-  url: ''
-  submenu: 
-  - url: board-recruitment
-  - url: corporate-executive-role-in-nonprofits 
-  - url: board-orientation
-  - url: solicitation-training
-  - url: executive-coaching-for-nonprofits
-  - url: new-business-connector
-- title: What People Are Saying
-  url: what-people-are-saying
-  submenu:
-- title: Contact us
-  custom-link: 'mailto:nancy@sacconnects.net' 
+links:
+  - title: About us
+    url: ""
+    submenu:
+      - url: what-is-sacconnects
+      - url: about-the-founder
+      - url: how-we-work-with-you
+      - url: community-involvement
+      - url: past-events
+  - title: Services
+    url: ""
+    submenu:
+      - url: board-recruitment
+      - url: corporate-executives-role-in-nonprofits
+      - url: board-orientation
+      - url: solicitation-training
+      - url: executive-coaching-for-nonprofits
+      - url: new-business-connector
+  - title: What People Are Saying
+    url: what-people-are-saying
+    submenu: null
+  - title: Contact us
+    custom-link: mailto:nancy@sacconnects.net
