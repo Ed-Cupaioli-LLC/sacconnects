@@ -1,6 +1,6 @@
 ---
 title: Board Recruitment
-permalink: /about/board-recruitment/
+permalink: /services/board-recruitment/
 layout: basic-page 
 ---
 ## Great People = Great Boards
