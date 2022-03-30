@@ -30,6 +30,8 @@
             </div>
             {% endfor %}
           </div>
+          {% elsif link.custom-link and link.custom-link.size > 0 %}
+          <a href="{{ link.custom-link }}" class="nav-link">{{ link.title }}</a>
           {% else %}
           
           {% capture page-id %}_pages/{{ link.url }}.md{% endcapture %}
