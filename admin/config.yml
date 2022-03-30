@@ -14,14 +14,15 @@ collections:
   fields: 
     - label: 'Title'
       name: 'title'
-      required: true
       widget: 'string'
     - label: 'Logo'
       name: 'logo'
       widget: 'image'
+      required: false
     - label: 'Review'
       name: 'review'
       widget: 'object'
+      required: false
       collapsed: true
       fields:
         - label: 'Review text'
@@ -29,6 +30,7 @@ collections:
           widget: 'markdown'
         - label: 'Excerpt' 
           name: 'excerpt'
+          required: false
           hint: 'Optional field if you want to use a select line of text instead of the first sentence of the review on the homepage.'
           widget: 'markdown'
         - label: 'source'
@@ -39,12 +41,15 @@ collections:
             - label: 'Name'
               name: 'name'
               widget: 'string'
+              required: false
             - label: 'Title'
               name: 'title'
-              widget: 'string'    
+              widget: 'string'   
+              required: false 
             - label: 'Organization'
               name: 'org'
               widget: 'string'
+              required: false
               hint: 'Alternate organization name for the client. If none is specified, then it will default to the client title.'
 - name: 'pages'
   label: 'Pages'
@@ -55,14 +60,14 @@ collections:
   fields:
   - name: 'title'
     label: 'Title'
-    required: true
     widget: 'string'
   - name: 'body'
     label: 'Body'
     widget: 'markdown' 
   - name: 'permalink'
     label: 'Permalink'
-    hint: 'Completely optional since the link will automatically generate when you create it based on the title. Just specify the page path like so: /my-page-permalink/'                        
+    required: false
+    hint: 'Optional since the link will automatically generate when you create it based on the title. Just specify the page path like so: /my-page-permalink/'                        
 - name: 'home'
   label: 'Home Page'
   create: false
@@ -201,6 +206,68 @@ collections:
           - name: 'title'
             label: 'Client section title'
             widget: 'string'
+- name: 'menus'
+  label: 'Menus and site information'
+  hint: 'Edit the navigation, footer, and site information here.'
+  preview: false
+  files: 
+  - name: 'nav'
+    label: 'Navigation menu'
+    hint: 'Add/edit links for navigation menu here.'                
+    file: '_data/nav.yml'
+    fields: 
+    - name: 'logo'
+      label: 'Logo'
+      hint: 'The logo that appears on the left-hand side of the navigation menu'
+      widget: image
+      choose_url: false
+      allow_multiple: false
+    - name: 'links'
+      label: 'Links'
+      hint: 'Add,remove, or reorder links on the right-hand side of the navigation menu'
+      widget: list
+      collapsed: true
+      fields: 
+      - name: title
+        label: 'Title'
+        widget: 'string'
+      - name: url
+        label: 'Page link'
+        hint: 'select the page you want to link to. If this is a submenu link, you can leave this field empty.'
+        widget: 'relation'
+        required: false
+        collection: 'pages'
+        search_fields: ['title']
+        display_fields: ['title']
+        value_field: '{{slug}}'
+      - name: 'submenu'
+        label: 'Submenu links'
+        hint: 'These links will appear in a dropdown below the page link specified above'
+        widget: list
+        required: false
+        fields: 
+        - name: url
+          label: 'Page link'
+          hint: 'select the page you want to link to. Title will automatically be configured.'
+          widget: 'relation'
+          required: false
+          collection: 'pages'
+          search_fields: ['title']
+          display_fields: ['title']
+          value_field: '{{slug}}'
+      - name: custom-link
+        label: 'Custom link'
+        hint: 'If you need to link to any outside sites, the link can be added here.'
+        required: false
+        widget: 'string'
+
+
+
+          
+
+      
+
+          
                 
                   
 
