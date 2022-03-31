@@ -3,7 +3,7 @@ title: What Is SacConnects?
 layout: basic-page
 permalink: /about-us/what-is-sacconnects/
 ---
-![Nancy Brodovsky sitting on a panel with other professional women](/assets/images/what-is-sacconnects-banner.jpg)
+![Nancy and three other women sitting on stage speaking to an audience](/assets/images/what-is-sacconnects-banner.jpg)
 *Photo Credit: Phillip Kamel*
 
 ## Great People = Great Boards = Great Nonprofits
