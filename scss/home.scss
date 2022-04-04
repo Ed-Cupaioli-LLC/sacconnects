@@ -134,6 +134,19 @@
       align-items: center;
       justify-content: center;
       gap: 2rem;
+      .client-logo {
+        max-width: 160px;
+        max-height: 120px;
+      }
+      @include bp-large {
+        grid-template-columns: repeat(3,1fr);
+      }
+      @include bp-medium {
+        grid-template-columns: repeat(2,1fr);
+      }
+      @include bp-small {
+        grid-template-columns: repeat(1,1fr);
+      }  
     }
   }
 }
