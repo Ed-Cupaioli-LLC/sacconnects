@@ -8,6 +8,7 @@ collections:
 - name: 'clients'
   label: 'Clients'
   folder: '_clients/'
+  publish_mode: editorial_workflow
   create: true
   editor:
     preview: false
@@ -54,6 +55,7 @@ collections:
 - name: 'pages'
   label: 'Pages'
   folder: '_pages/'
+  publish_mode: editorial_workflow
   create: true
   editor: 
     preview: true
@@ -206,62 +208,183 @@ collections:
           - name: 'title'
             label: 'Client section title'
             widget: 'string'
-- name: 'menus'
-  label: 'Menus and site information'
-  hint: 'Edit the navigation, footer, and site information here.'
-  preview: false
-  collection: '_data/'
+- name: 'nav'
+  label: 'Navigation menu'
+  hint: 'Add/edit links for navigation menu here.'                
   create: false
+  editor:
+    preview: false
   files: 
   - name: 'nav'
-    label: 'Navigation menu'
-    hint: 'Add/edit links for navigation menu here.'                
+    label: 'Navigation'
     file: '_data/nav.yml'
     fields: 
-    - name: 'logo'
-      label: 'Logo'
-      hint: 'The logo that appears on the left-hand side of the navigation menu'
-      widget: image
-      choose_url: false
-      allow_multiple: false
-    - name: 'links'
-      label: 'Links'
-      hint: 'Add,remove, or reorder links on the right-hand side of the navigation menu'
-      widget: list
-      collapsed: true
-      fields: 
-      - name: title
-        label: 'Title'
-        widget: 'string'
-      - name: url
-        label: 'Page link'
-        hint: 'select the page you want to link to. If this is a submenu link, you can leave this field empty.'
-        widget: 'relation'
-        required: false
-        collection: 'pages'
-        search_fields: ['title']
-        display_fields: ['title']
-        value_field: '{{slug}}'
-      - name: 'submenu'
-        label: 'Submenu links'
-        hint: 'These links will appear in a dropdown below the page link specified above'
+      - name: 'logo'
+        label: 'Logo'
+        hint: 'The logo that appears on the left-hand side of the navigation menu'
+        widget: image
+        choose_url: false
+        allow_multiple: false
+      - name: 'links'
+        label: 'Links'
+        hint: 'Add,remove, or reorder links on the right-hand side of the navigation menu'
         widget: list
-        required: false
+        collapsed: true
         fields: 
+        - name: title
+          label: 'Title'
+          widget: 'string'
         - name: url
           label: 'Page link'
-          hint: 'select the page you want to link to. Title will automatically be configured.'
+          hint: 'select the page you want to link to. If this is a submenu link, you can leave this field empty.'
           widget: 'relation'
           required: false
           collection: 'pages'
           search_fields: ['title']
           display_fields: ['title']
           value_field: '{{slug}}'
-      - name: custom-link
-        label: 'Custom link'
-        hint: 'If you need to link to any outside sites, the link can be added here.'
-        required: false
+        - name: 'submenu'
+          label: 'Submenu links'
+          hint: 'These links will appear in a dropdown below the page link specified above'
+          widget: list
+          required: false
+          fields: 
+          - name: url
+            label: 'Page link'
+            hint: 'select the page you want to link to. Title will automatically be configured.'
+            widget: 'relation'
+            required: false
+            collection: 'pages'
+            search_fields: ['title']
+            display_fields: ['title']
+            value_field: '{{slug}}'
+        - name: custom-link
+          label: 'Custom link'
+          hint: 'If you need to link to any outside sites, the link can be added here.'
+          required: false
+          widget: 'string'
+- name: footer
+  label: 'Footer'
+  create: false
+  editor:
+    preview: false
+  files: 
+  - file: '_data/footer.yml'
+    name: footer
+    label: 'Footer'
+    hint: 'The dark gray footer that appears on all pages'
+    fields: 
+    - name: copyright
+      label: 'Copyright'
+      widget: 'string'
+      hint: 'Text to the right of the copyright symbol and year. Year is automatically generated from the current date.'
+    - name: links
+      label: 'Links'
+      widget: 'list'
+      hint: 'The links that appear from left to right at the bottom of the footer.'
+      fields: 
+      - name: title
+        label: 'Link title'
         widget: 'string'
+        hint: 'The title of the link that will appear.'
+      - name: url
+        label: 'Link URL'
+        widget: 'string'
+        hint: 'The link users will go to on click. Add both internal and external links here.'  
+- name: 'meta'
+  label: 'Site info'
+  create: false
+  editor: 
+    preview: false
+  files: 
+  - file: '_data/meta.yml' 
+    name: 'meta'
+    label: 'Site info' 
+    hint: 'All of your site information, ie Meta Data, will live here.'
+    fields: 
+    - name: 'title'
+      label: 'Site Title'
+      widget: 'string'
+      hint: 'The title of your site you want social media and search engines to display'
+    - name: 'description'
+      label: 'Site description'
+      hint: 'The description of your site you want social media and search engines to display'  
+    - name: 'meta_img'
+      label: 'Site image'
+      widget: 'image'
+      hint: 'The image for your site you want social media display when you share a link'  
+    - name: 'favicon'  
+      label: 'Site Favicon'
+      widget: 'image'
+      hint: 'The small image that appears on the browser tab for your website'
+    - name: 'gtm'
+      label: 'Google Tag Manager property'  
+      widget: 'string'
+      hint: 'The property ID for your Google Tag Manager container'
+    - name: 'schema'
+      label: 'Business Information'
+      widget: 'object'
+      required: false
+      hint: 'Information about your business so Google can show it as rich results. None of these fields are required'
+      fields:
+      - name: 'name'
+        label: 'Business Name' 
+        widget: 'string'
+      - name: 'logo'
+        label: 'Business logo'
+        widget: 'image'
+        hint: 'Your business logo'  
+      - name: 'image'
+        label: 'Business Image'
+        widget: 'image'
+        hint: 'an image of your business like a curbside photo or interior shots'
+      - name: 'phone'
+        label: 'Business phone'
+        widget: 'string'
+      - name: 'email'
+        label: 'Business email'
+        widget: 'string'
+      - name: 'social'
+        label: 'Social media profiles' 
+        hint: 'Paste in your social media profiles here. Add a comma after each to add another profile'
+        widget: 'list' 
+      - name: 'location'
+        label: 'Business Location'
+        widget: 'object'
+        fields:
+        - name: 'address'
+          label: 'Address'
+          widget: 'string'
+        - name: 'city'
+          label: 'City'
+          widget: 'string'
+        - name: 'zip'
+          label: 'Zip'
+          widget: 'string'
+      - name: 'hours'
+        label: 'Business Hours'    
+        widget: 'object'
+        fields: 
+        - name: 'days'
+          label: "Days"
+          hint: 'Type in the days of the week you are operating with a comma after each'
+          widget: 'list'
+        - name: 'opens'
+          label: 'Opening time of your business'
+          widget: 'string'
+        - name: 'closes'
+          label: 'Closing time of your business'
+          widget: 'string'
+
+
+                  
+            
+            
+
+        
+
+
+        
 
 
 
