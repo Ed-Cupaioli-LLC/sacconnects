@@ -55,7 +55,7 @@ collections:
 - name: 'pages'
   label: 'Pages'
   folder: '_pages/'
-  publish_mode: editorial_workflow
+  
   create: true
   editor: 
     preview: true
