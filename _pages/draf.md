@@ -1,4 +1,4 @@
 ---
-title: draf
+title: example page
 ---
 draft
