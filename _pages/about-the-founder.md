@@ -4,7 +4,7 @@ permalink: /about-us/about-the-founder/
 ---
 ## Nancy Brodovsky
 
-![Image of Nancy Brodovsky in a red suit](/assets/images/NancyBrodovsky-small-new.jpg)
+![Image of Nancy Brodovsky in a red suit](/assets/images/NancyBrodovsky-small-new-250w.jpg)
 
 For the past 35 years, 29 of them in Sacramento, Nancy Brodovsky has been actively involved in over 20 local, regional, and national nonprofit organizations. She has held numerous board and committee positions, including president and board chair. Learn more about Nancy's [Community Involvement](https://web.archive.org/web/20210813024528/https://www.sacconnects.net/about-us/community-involvement/ "Community Involvement").
 

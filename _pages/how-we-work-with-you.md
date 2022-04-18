@@ -2,6 +2,7 @@
 title: How We Work with You
 permalink: /about-us/how-we-work-with-you/
 ---
+![An image of Nancy speaking to some students](/assets/images/how-we-work-with-you-banner.jpg)
 ## How We Work with Nonprofits
 
 ### Needs Assessment — We Listen and We Learn

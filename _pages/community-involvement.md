@@ -2,6 +2,9 @@
 title: Community Involvement
 permalink: /about-us/community-involvement/
 ---
+![Image of Nancy posing with others from the community](/assets/images/community-involvement-banner.jpg)
+*Photo Credit: Tia Gemmell*
+
 ## Currently Nancy is involved in the following organizations:
 
 ### [2015 American Cancer Society Hope Gala: 2015 Sacramento Hope Gala](//main.acsevents.org/site/TR/Gala/GalaFY10California?pg=entry&fr_id=69670#.VU5Zc1PF-Us/ "2015 American Cancer Society Hope Gala: 2015 Sacramento Hope Gala")
