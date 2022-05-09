@@ -3,6 +3,8 @@ slider: true
 css: home
 scripts:
   - home
+clients:
+  title: Our Clients
 layout: home-page
 permalink: /
 about:
@@ -40,7 +42,7 @@ news:
       link: https://www.comstocksmag.com/article/be-better-board-member
 title: Home Page
 hero:
-  title: Welcome to SacConnects
+  title: "Welcome to SacConnects "
   text: Your destination for premium board and association recruitment and board
     effectiveness guidance.
   cta:
@@ -60,6 +62,4 @@ reviews:
     - client: red-rover
     - client: nehemiah-community-foundation
     - client: ddso
-clients:
-  title: Our Clients   
 ---
