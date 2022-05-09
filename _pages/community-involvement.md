@@ -10,19 +10,17 @@ permalink: /about-us/community-involvement/
 ### [American Leadership Forum ALF](//www.alf-mvc.org/ "American Leadership Forum ALF")
 
 Gives leaders from the most diverse elements of their community an opportunity to build trusting relationships with each other and to develop skills in collaboration that can be applied to benefit the community.\
-**Senior fellow, Vice Chair of the board & co-chaired Exemplary Leadership Dinner**
-
-
+**Senior fellow, Executive Committee Member, 2016 Chair of the board & served on numerous committees since 2011.**
 
 ### [National American Leadership Forum](alfnational.org)
 
-ALF is a national n
+ALF is a national, nonprofit organization dedicated to building stronger communities by joining and strengthening diverse leaders to serve the common good.  There are seven chapters located throughout the United States.  Each chapter tailors its Fellows and Senior Fellows program to the region it serves.                                                                                                 **Board Member**
 
-**Board Member**
+### [KVIE -PBS for Northern California ](kvie.org)
 
+Serves nearly 1.4 million households in a 16-county TV Market, the nation's 20th largest.  PBS KVIE's mission is to inspire the viewer to explore the world and connect with their community through the integrity of public media.                                                                                              **Board Member**
 
-
-### [](alfnational.org)Previous involvements:
+### [](kvie.org)[](alfnational.org)Previous involvements:
 
 ### [2015 American Cancer Society Hope Gala: 2015 Sacramento Hope Gala](//main.acsevents.org/site/TR/Gala/GalaFY10California?pg=entry&fr_id=69670#.VU5Zc1PF-Us/ "2015 American Cancer Society Hope Gala: 2015 Sacramento Hope Gala")
 
