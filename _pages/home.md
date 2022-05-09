@@ -33,7 +33,7 @@ news:
       outlet: Sacramento Business Journal
       link: https://www.sacconnects.net/home/perpectives-on-leadership-1-1/
     - title: Comstock Magazine
-      outlet: Be A Batter Board Member
+      outlet: Be A Better Board Member
       link: https://www.comstocksmag.com/article/be-better-board-member
 clients:
   title: Our Clients
