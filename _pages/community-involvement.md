@@ -53,7 +53,7 @@ In 2012 First-time festival was attended by 25,000 highlighting Farm-to-Fork off
 ### [Capital Region Women's Conference](//www.capregionwomen.com/ "Capital Region Women's Conference")
 
 A collaborative annual event for women which focused on health and wealth.\
-**Committee member for the Inaugural Conference and Moderator on the panel: Philanthropic Transformation: Women Leading the Way**
+**Committee member for the Inaugural Conference and Moderator on the panel: Philanthropic Transformation:  Women Leading the Way**
 
 ### [UC Davis MIND Institute](//www.ucdmc.ucdavis.edu/mindinstitute/ "UC Davis MIND Institute")
 
