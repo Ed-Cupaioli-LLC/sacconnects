@@ -36,7 +36,7 @@ news:
       outlet: Be A Better Board Member
       link: https://www.comstocksmag.com/article/be-better-board-member
 clients:
-  title: Our Clients
+  title: Who We Work With
 layout: home-page
 permalink: /
 about:
