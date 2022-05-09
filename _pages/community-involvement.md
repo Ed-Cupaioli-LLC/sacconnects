@@ -7,15 +7,27 @@ permalink: /about-us/community-involvement/
 
 ## Currently Nancy is involved in the following organizations:
 
-### [2015 American Cancer Society Hope Gala: 2015 Sacramento Hope Gala](//main.acsevents.org/site/TR/Gala/GalaFY10California?pg=entry&fr_id=69670#.VU5Zc1PF-Us/ "2015 American Cancer Society Hope Gala: 2015 Sacramento Hope Gala")
-
-Sacramento's 7th Annual American Cancer Society Gala, "A Bounty of Hope" Saturday September 12, 2015 an elegant evening of gourmet dining, silent and live auction and an opportunity to help fight against cancer.\
-**Event Co-Chair**
-
 ### [American Leadership Forum ALF](//www.alf-mvc.org/ "American Leadership Forum ALF")
 
 Gives leaders from the most diverse elements of their community an opportunity to build trusting relationships with each other and to develop skills in collaboration that can be applied to benefit the community.\
 **Senior fellow, Vice Chair of the board & co-chaired Exemplary Leadership Dinner**
+
+
+
+### [National American Leadership Forum](alfnational.org)
+
+ALF is a national n
+
+**Board Member**
+
+
+
+### [](alfnational.org)Previous involvements:
+
+### [2015 American Cancer Society Hope Gala: 2015 Sacramento Hope Gala](//main.acsevents.org/site/TR/Gala/GalaFY10California?pg=entry&fr_id=69670#.VU5Zc1PF-Us/ "2015 American Cancer Society Hope Gala: 2015 Sacramento Hope Gala")
+
+Sacramento's 7th Annual American Cancer Society Gala, "A Bounty of Hope" Saturday September 12, 2015 an elegant evening of gourmet dining, silent and live auction and an opportunity to help fight against cancer.\
+**Event Co-Chair**[](//www.alf-mvc.org/ "American Leadership Forum ALF")
 
 ### [City Year](//www.cityyear.org/sacramento.aspx "City Year")
 
@@ -32,8 +44,6 @@ A movement that encourages residents of the Greater Sacramento region to donate 
 The school offers Ph.D., Ed.D, and M.A., degrees in education, as well as single and multiple subject teaching credentials.\
 **Board of Advisors Member**
 
-### Previous involvements:
-
 ### [Farm to Fork Festival](//farmtoforkcapital.com/festival-info/ "Farm to Fork Festival")
 
 First time festival attended by 25,000 highlighting Farm-to-Fork offerings that are produced and available in the Sacramento region.\
@@ -42,7 +52,7 @@ First time festival attended by 25,000 highlighting Farm-to-Fork offerings that 
 ### [Capital Region Women's Conference](//www.capregionwomen.com/ "Capital Region Women's Conference")
 
 A collaborative annual event for women which focused on health and wealth.\
-**Committee member for the Inaugural conference and served as a moderator on the panel: Philanthropic Transformation:Women Leading the Way**
+**Committee member for the Inaugural conference and served as a moderator on the panel: Philanthropic Transformation: Women Leading the Way**
 
 ### [UC Davis MIND Institute](//www.ucdmc.ucdavis.edu/mindinstitute/ "UC Davis MIND Institute")
 
@@ -108,6 +118,6 @@ Provider of behavioral health and mental health services for at risk children\
 
 ### Shalom School Gala honoree 2010
 
-### STARS participant [Science Technology and the Arts] for San Juan Education Foundation 2009
+### STARS participant \[Science Technology and the Arts] for San Juan Education Foundation 2009
 
 ### Breakthrough Sacramento Early Riser Honoree, 2008
