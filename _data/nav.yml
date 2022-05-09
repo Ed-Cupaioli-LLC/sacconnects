@@ -11,14 +11,14 @@ links:
   - title: Services
     url: ""
     submenu:
+      - url: new-business-connector
       - url: board-recruitment
       - url: corporate-executives-role-in-nonprofits
       - url: board-orientation
       - url: solicitation-training
       - url: executive-coaching-for-nonprofits
-      - url: new-business-connector
   - title: What People Are Saying
-    url: 'reviews'
+    url: reviews
     submenu: null
   - title: Contact us
     custom-link: mailto:nancy@sacconnects.net
