@@ -1,6 +1,6 @@
 ---
 title: PRO Youth & Families
-logo: /assets/images/pro-horizontal-logo-white-and-green-text-150x150.png
+logo: ""
 review:
   text: >-
     \
