@@ -5,8 +5,8 @@ scripts:
   - home
 hero:
   title: "Welcome to SacConnects "
-  text: Your destination for premium board and association recruitment and board
-    effectiveness guidance.
+  text: Your destination for premium business connections, recruitment of board
+    members, and board effectiveness and engagement guidance.
   cta:
     text: About SacConnects
     link: /about-us/what-is-sacconnects/
