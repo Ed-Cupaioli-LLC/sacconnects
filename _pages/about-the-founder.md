@@ -6,7 +6,7 @@ permalink: /about-us/about-the-founder/
 
 ![Image of Nancy Brodovsky in a red suit](/assets/images/NancyBrodovsky-small-new-250w.jpg)
 
-For more than 40 years Nancy Brodovsky has been actively involved in over 20 local, regional, and national nonprofit organizations. She has held numerous board and committee positions, including president and board chair. Learn more about Nancy's [Community Involvement](https://web.archive.org/web/20210813024528/https://www.sacconnects.net/about-us/community-involvement/ "Community Involvement").
+For more than 40 years Nancy Brodovsky has been actively involved in over 20 local, regional, and national nonprofit organizations. She has held numerous board and committee positions, including president and board chair. Learn more about Nancy's [Community Involvement](https://www.sacconnects.net/about-us/community-involvement/).
 
 Nancy created SacConnects because there was a serious need to help nonprofits thrive and a missing component to their success, was that they weren't connected to the right people. As a community connector, Nancy Brodovsky is best able to bridge the gap. 
 
