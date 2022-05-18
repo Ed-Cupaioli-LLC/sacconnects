@@ -22,7 +22,7 @@ Serves nearly 1.4 million households in a 16-county TV Market, the nation's 20th
 
 ## [](kvie.org)[](alfnational.org)Previous involvements:
 
-### Sacramento Metro Chamber of Commerce's Cap to Cap [](https://metrochamber.org/cap22/)
+### [Sacramento Metro Chamber of Commerce's Cap to Cap](https://metrochamber.org/cap22/) [](https://metrochamber.org/cap22/)
 
 50th Anniversary of leaders from across six counties and 22 cities in the Capitol Region went to our Nation's Capitol to address local issues and advocate for the region through its twelve policy teams. It is the largest long-standing delegation of its kind.  The Civic Amenities Committee explored how live music venues support a region's economic vitality and contribute to a thriving sense of community.                                                                                                                                       **Civic Amenities Planning Committee Member**
 
