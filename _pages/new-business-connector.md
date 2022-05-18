@@ -1,8 +1,14 @@
 ---
-title: New Business Connector
+title: Business Connector
 permalink: /services/new-business-connector/
 ---
 ![image of Nancy posing for a photo with 6 other people in front of a building](/assets/images/IMG_7554-300x199.jpg)
+
+## *How to Integrate your New CEO into the community?*
+
+## *New Executive comes to your organization, now how do you connect them to the community?*
+
+SacConnects is well positioned to introduce your new executive to the "right" people.  After a strategy session to determine the priorities and determine the "right people," SacConnects will detail a plan and personally attend the meeting to ensure a productive visit.
 
 ## *I would love to meet X, I know they could help our business, but I don't know how to get an introduction?*
 
