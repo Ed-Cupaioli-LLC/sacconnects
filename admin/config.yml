@@ -331,37 +331,47 @@ collections:
       - name: 'name'
         label: 'Business Name' 
         widget: 'string'
+        required: false
       - name: 'logo'
         label: 'Business logo'
         widget: 'image'
         hint: 'Your business logo'  
+        required: false
       - name: 'image'
         label: 'Business Image'
         widget: 'image'
         hint: 'an image of your business like a curbside photo or interior shots'
+        required: false
       - name: 'phone'
         label: 'Business phone'
         widget: 'string'
+        required: false
       - name: 'email'
         label: 'Business email'
         widget: 'string'
+        required: false
       - name: 'social'
         label: 'Social media profiles' 
         hint: 'Paste in your social media profiles here. Add a comma after each to add another profile'
         widget: 'list' 
+        required: false
       - name: 'location'
         label: 'Business Location'
         widget: 'object'
+        required: false
         fields:
         - name: 'address'
           label: 'Address'
           widget: 'string'
+          required: false
         - name: 'city'
           label: 'City'
           widget: 'string'
+          required: false
         - name: 'zip'
           label: 'Zip'
           widget: 'string'
+          required: false
       - name: 'hours'
         label: 'Business Hours'    
         widget: 'object'
@@ -370,12 +380,15 @@ collections:
           label: "Days"
           hint: 'Type in the days of the week you are operating with a comma after each'
           widget: 'list'
+          required: false
         - name: 'opens'
           label: 'Opening time of your business'
           widget: 'string'
+          required: false
         - name: 'closes'
           label: 'Closing time of your business'
           widget: 'string'
+          required: false
 
 
                   
