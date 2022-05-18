@@ -55,7 +55,6 @@ collections:
 - name: 'pages'
   label: 'Pages'
   folder: '_pages/'
-  
   create: true
   editor: 
     preview: true
@@ -78,7 +77,7 @@ collections:
   files:
     - label: 'Home Page'
       name: 'home'
-      file: '_pages/home.md'
+      file: 'index.md'
       fields:
         - name: 'hero'
           label: 'Hero Section'
