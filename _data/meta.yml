@@ -1,22 +1,23 @@
 title: SacConnects
-description: Your destination for premium board and association recruitment and board effectiveness guidance.
+description: Your destination for premium board and association recruitment and
+  board effectiveness guidance
 meta_img: /assets/images/sc-meta.png
 favicon: /assets/images/sacconnects-favicon1.png
 gtm: GTM-K5SM2XG
 schema:
-  name: SacConnects
-  type: Organization
-  image: 
   logo: assets/images/sacconnects-logo.png
-  phone: 
-  email: nancy@sacconnects.net
-  social: 
-  location: 
-    address: 
-    city: 
-    state: 
-    zip: 
+  name: SacConnects
+  social: null
+  phone: null
   hours:
-    days: 
-    opens:
-    closes: 
+    ? days
+    ? opens
+    ? closes
+  location:
+    ? address
+    ? city
+    ? state
+    ? zip
+  type: Organization
+  image: null
+  email: nancy@sacconnects.net
