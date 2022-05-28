@@ -1,6 +1,6 @@
 ---
-title: Susan G. Komen Northern & Central California
-logo: ""
+title: Susan G. Komen Sacramento Valley
+logo: /assets/images/susangkomen-logo.png
 site: https://www.komen.org/community/california/?req_url=https://komennccalifornia.org/
 review:
   text: Nancy Brodovsky and SacConnects provide an invaluable service to the
