@@ -5,18 +5,18 @@ permalink: /about-us/community-involvement/
 ![Image of Nancy posing with others from the community](/assets/images/community-involvement-banner.jpg)
 *Photo Credit: Tia Gemmell*
 
-## Currently Nancy is involved in the following organizations:
+## Currently, Nancy is involved in the following organizations:
 
 ### [American Leadership Forum ALF](//www.alf-mvc.org/ "American Leadership Forum ALF")
 
 Gives leaders from the most diverse elements of their community an opportunity to build trusting relationships with each other and to develop skills in collaboration that can be applied to benefit the community. \
 **Senior fellow, Executive Committee Member, 2016 Chair of the Board & served on numerous committees since 2011.**
 
-### [National American Leadership Forum](alfnational.org)
+### [National American Leadership Forum](https://www.alfnational.org/)
 
 ALF is a national, nonprofit organization dedicated to building stronger communities by joining and strengthening diverse leaders to serve the common good.  There are seven chapters located throughout the United States.  Each chapter tailors its Fellows and Senior Fellows program to the region it serves.                                                                                                 **Board Member**
 
-### [KVIE -PBS for Northern California ](kvie.org)
+### [KVIE -PBS for Northern California ](https://www.kvie.org/)
 
 Serves nearly 1.4 million households in a 16-county TV Market, the nation's 20th largest.  PBS KVIE's mission is to inspire the viewer to explore the world and connect with their community through the integrity of public media.                                                                                              **Board Member**
 
@@ -26,11 +26,11 @@ Serves nearly 1.4 million households in a 16-county TV Market, the nation's 20th
 
 50th Anniversary of leaders from across six counties and 22 cities in the Capitol Region went to our Nation's Capitol to address local issues and advocate for the region through its twelve policy teams. It is the largest long-standing delegation of its kind.  The Civic Amenities Committee explored how live music venues support a region's economic vitality and contribute to a thriving sense of community.                                                                                                                                       **Civic Amenities Planning Committee Member**
 
-### [2015 American Cancer Society Hope Gala: 2015 Sacramento Hope Gala](//main.acsevents.org/site/TR/Gala/GalaFY10California?pg=entry&fr_id=69670#.VU5Zc1PF-Us/ "2015 American Cancer Society Hope Gala: 2015 Sacramento Hope Gala")
+### 2015 American Cancer Society Hope Gala: 2015 Sacramento Hope Gala
 
 Sacramento's 7th Annual American Cancer Society Gala, "A Bounty of Hope" Saturday, September 12, 2015.  We raised over $425,000 and netted $385,000 which was a 74% increase over the year before.                                                                                                     **Event Co-Chair**[](//www.alf-mvc.org/ "American Leadership Forum ALF")
 
-### [City Year](//www.cityyear.org/sacramento.aspx "City Year")
+### [City Year](https://www.cityyear.org/sacramento)
 
 Unites young people of all backgrounds for a year of full-time service as corps members where they work in the classroom focusing on attendance, behavior, and core curriculum.\
 **Founding board member, Executive Committee Member, Chair of Board Leadership and Development Committee**
@@ -45,12 +45,12 @@ In 2013 a movement was started to encourage residents of the Greater Sacramento 
 The school offers Ph.D., Ed.D, and M.A., degrees in education, as well as single and multiple subject teaching credentials.\
 **Board of Advisors Member**
 
-### [Farm to Fork Festival](//farmtoforkcapital.com/festival-info/ "Farm to Fork Festival")
+### [Farm to Fork Festival](https://www.farmtofork.com)
 
 In 2012 First-time festival was attended by 25,000 highlighting Farm-to-Fork offerings that are produced and available in the Sacramento region.\
 **Created an effort within the festival to raise funds for the six-county food banks**
 
-### [Capital Region Women's Conference](//www.capregionwomen.com/ "Capital Region Women's Conference")
+### Capital Region Women's Conference
 
 A collaborative annual event for women which focused on health and wealth.\
 **Committee member for the Inaugural Conference and Moderator on the panel: Philanthropic Transformation:  Women Leading the Way**
@@ -60,7 +60,7 @@ A collaborative annual event for women which focused on health and wealth.\
 A collaborative international research center committed to the awareness, understanding, prevention, care, and cures of neurodevelopmental disorders. As Event Co-Chair for three years raised over $275,000. As board chair, she was involved in the hiring of the executive director, and instrumental in creating an awareness event that brought in over 900 people.\
 **Chair of the Board and Event Co-Chair** 
 
-### [UC Davis Leadership Council](//www.ucdmc.ucdavis.edu/leadershipcouncil/ "UC Davis Leadership Council")
+### [UC Davis Leadership Council](https://health.ucdavis.edu/welcome/friends.html)
 
 Community members who serve as advocates are committed to building awareness of and support for UC Davis Health System.\
 **Executive Committee Member and Chair of several committees**
@@ -75,27 +75,27 @@ Event to support heart awareness, research, education, and community programs to
 An independent, coeducational, college-prep school. Pre-K to 12.\
 **Board Member**
 
-### [Breakthrough Sacramento](//www.saccds.org/inside-scds/breakthrough-sacramento/ "Breakthrough Sacramento")
+### [Breakthrough Sacramento](https://breakthroughsac.org/)
 
 A public-private partnership providing a six-week academic summer program for college motivated ethnically diverse students from under-resourced schools, taught by teacher-trained high school and college students.\
 **Advisory Committee Member**
 
-### [Shalom School](//www.shalomschool.org/ "Shalom School")
+### [Shalom School](https://www.shalomschool.org/)
 
 An independent Jewish Community Day School from Infant-6th grade.\
 **President and Chair of numerous committees**
 
-### [Crocker Art Museum](//crockerartmuseum.org/ "Crocker Art Museum")
+### [Crocker Art Museum](https://www.crockerart.org)
 
 Oldest public art museum west of the Mississippi River. Served on the board for 13 years.\
 **Board Member, Treasurer, Secretary, and Chair of numerous events**
 
-### [FamiliesFirst](//emqff.org/ "FamiliesFirst")
+### FamiliesFirst
 
 Offers mental health treatment, and social services to foster care recipients.\
 **Co-Chaired the first Valentine's Ball**
 
-### [National Breast Cancer Fund](//www.breastcancerfund.org/ "National Breast Cancer Fund")
+### National Breast Cancer Fund
 
 Identifies and advocates for the elimination of the environmental and other preventable causes of breast cancer.  Co-Chair of the Sacramento Gala for three years raised $250,000.\
 **Board Member and Sacramento Event Co-Chair**
@@ -105,7 +105,7 @@ Identifies and advocates for the elimination of the environmental and other prev
 Conservative Synagogue\
 **Vice President Board of Trustees**
 
-### [Sacramento Jewish Federation](//jewishsac.org/ "Sacramento Jewish Federation")
+### Sacramento Jewish Federation
 
 A philanthropic, not-for-profit organization that provides educational, cultural, and social services programs within the Jewish community locally and around the world.\
 **Board Member, numerous positions, and Chaired Women's Division Campaign**
