@@ -15,7 +15,7 @@ review:
     title: Executive Director
     org: ""
   review:
-    name: Kelly Mac Millan
-    org: Susan G. Komen Northern & Central California
-    title: Former, Executive Director
+    name: ""
+    org: ""
+    title: ""
 ---
