@@ -2,7 +2,7 @@
 title: Business Connector
 permalink: /services/new-business-connector/
 ---
-![image of Nancy posing for a photo with 6 other people in front of a building](/assets/images/IMG_7554-300x199.jpg)
+![image of Nancy posing for a photo with 6 other people in front of a building](/assets/images/img_0582.jpeg)
 
 ## *How to Integrate your New CEO into the community?*
 
