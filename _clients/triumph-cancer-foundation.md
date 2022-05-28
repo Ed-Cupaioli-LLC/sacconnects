@@ -1,6 +1,6 @@
 ---
 title: Triumph Cancer Foundation
-logo: /assets/images/triumph.png
+logo: https://triumphfound.org/wp-content/uploads/2019/02/triumph-logo-190@2x.png
 review:
   text: <https://triumphfound.org/>We had the pleasure of working with Nancy
     Brodovsky in various capacities when we needed help in shaping our Board and
