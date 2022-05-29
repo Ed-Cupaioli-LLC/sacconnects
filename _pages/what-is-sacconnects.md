@@ -6,9 +6,9 @@ permalink: /about-us/what-is-sacconnects/
 ![an image of Nancy and three other women sitting on stage speaking to an audience ](/assets/images/what-is-sacconnects-banner.jpg)
 *Photo Credit: Phillip Kamel*
 
-## Connecting Great People in Sacramento
+### Connecting Great People in Sacramento
 
-## Achieving  Great Boards & Great Nonprofits
+### Achieving  Great Boards & Great Nonprofits
 
 SacConnects is a boutique consulting firm that focuses on helping nonprofit boards find the most relevant talent to help drive their organization's mission forward. We do this by understanding the skill-sets the organization needs and matching individuals from our network who are the best fit. We also facilitate the successful integration of these new members with our customized board member orientation program. In addition, we provide training on effective fundraising techniques and running more effective board meetings.
 
