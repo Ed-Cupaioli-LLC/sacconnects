@@ -14,8 +14,9 @@ hero:
     - src: /assets/images/rotator-image-table.jpg
       alt: People sitting at a table in a meeting
       text: SacConnects brings the right people to the table to make things happen!
-    - src: /assets/images/rotator-image-1.jpg
-      alt: 4 people shaking hands at a meeting
+    - src: /assets/images/istock-2.jpeg
+      alt: 2 people standing shaking hands at a meeting while 4 others are clapping at
+        their seats
       text: SacConnects matches your executives to the right boards!
     - src: /assets/images/istock-1329476202.jpeg
       alt: Older woman introducing and shaking hands with a group of four young
