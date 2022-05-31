@@ -1,8 +1,8 @@
 ---
 title: Triumph Cancer Foundation
-logo: https://triumphfound.org/wp-content/uploads/2019/02/triumph-logo-190@2x.png
+logo: /assets/images/triumph-logo-190@2x.png
 review:
-  text: <https://triumphfound.org/>We had the pleasure of working with Nancy
+  text: We had the pleasure of working with Nancy
     Brodovsky in various capacities when we needed help in shaping our Board and
     developing a strategic plan.  Her long-term experience in the nonprofit
     world and deep roots in our community were invaluable to our Foundation. 

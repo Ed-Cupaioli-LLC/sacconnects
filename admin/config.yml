@@ -19,6 +19,12 @@ collections:
     - label: 'Logo'
       name: 'logo'
       widget: 'image'
+      choose_url: false
+      
+      required: false
+    - label: 'Website'
+      name: site
+      widget: 'string'
       required: false
     - label: 'Review'
       name: 'review'
@@ -114,6 +120,7 @@ collections:
             - name: 'src'
               label: 'Image'
               widget: 'image'
+              choose_url: false
             - name: 'alt'
               label: 'Image description (alt) text'
               hint: 'Description or alt text is a way to describe an image to screen readers for people with disabilities. This is required by the ADA and will help your search ranking.'
@@ -312,10 +319,12 @@ collections:
     - name: 'meta_img'
       label: 'Site image'
       widget: 'image'
+      choose_url: false
       hint: 'The image for your site you want social media display when you share a link'  
     - name: 'favicon'  
       label: 'Site Favicon'
       widget: 'image'
+      choose_url: false
       hint: 'The small image that appears on the browser tab for your website'
     - name: 'gtm'
       label: 'Google Tag Manager property'  
@@ -335,11 +344,13 @@ collections:
       - name: 'logo'
         label: 'Business logo'
         widget: 'image'
+        choose_url: false
         hint: 'Your business logo'  
         required: false
       - name: 'image'
         label: 'Business Image'
         widget: 'image'
+        choose_url: false
         hint: 'an image of your business like a curbside photo or interior shots'
         required: false
       - name: 'phone'

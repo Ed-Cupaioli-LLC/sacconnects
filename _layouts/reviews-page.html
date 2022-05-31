@@ -5,18 +5,22 @@ layout: default
   <div class="inner-section">
     {% assign clients = site.clients | sort: 'title' %}
     {% for client in clients  %}
+    {% if client.review.text and client.review.text != '' %}
     {% assign review = client.review %}
     <div class="review" data-review="{{ client.title }}">
-      {% if client.logo and client.logo.size > 0 %}
-      {% if client.logo contains '.svg' %}
-      <img class="review-logo" src="{{ client.logo }}"/>
-      {% else %}
-      <img class="review-logo" src="/{{ client.logo | resize: '250>x120>' }}"/>
-      {% endif %}
-      {% else %}
-      <div class="review-client heading-2">{{ client.title }}</div>
-      {% endif %}
+      <a href="{{client.site}}">
+        {% if client.logo and client.logo.size > 0 %}
+        {% if client.logo contains '.svg' %}
+        <img class="review-logo" src="{{ client.logo }}"/>
+        {% else %}
+        <img class="review-logo" src="/{{ client.logo | resize: '250>x120>' }}"/>
+        {% endif %}
+        {% else %}
+        <div class="review-client heading-2">{{ client.title }}</div>
+        {% endif %}
+      </a>
       <div class="review-text">
+        
         {{ review.text | append: "&rdquo;" | prepend: "&ldquo;" | markdownify }}
       </div>
       <div class="review-source">
@@ -35,6 +39,7 @@ layout: default
         </div>
       </div>
     </div>
+    {% endif %}
     {% endfor %}
   </div>
 </section>
