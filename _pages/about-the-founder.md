@@ -1,5 +1,5 @@
 ---
-title: About the Founder
+title: About the Principal
 permalink: /about-us/about-the-founder/
 ---
 ## Nancy Brodovsky
