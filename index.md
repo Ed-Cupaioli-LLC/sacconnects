@@ -57,7 +57,7 @@ about:
   image: /assets/images/NancyBrodovsky-small-new.jpg
   cta:
     text: More About Nancy
-    link: /about-us/about-the-founder/
+    link: /about-us/about-the-principal/
 content-id: home
 title: Home Page
 reviews:
