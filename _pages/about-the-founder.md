@@ -1,6 +1,6 @@
 ---
 title: About the Principal
-permalink: /about-us/about-the-founder/
+permalink: /about-us/about-the-principal/
 ---
 ## Nancy Brodovsky
 
