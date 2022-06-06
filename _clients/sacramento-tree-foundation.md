@@ -19,4 +19,7 @@ review:
     Slab mission to new members of the community.   Her energetic, thoughtful,
     and authentic advice ensured that our meetings were productive, and
     successful, and allowed us to establish new coalitions.
+  review:
+    name: Jessica Sanders
+    title: Executive Director
 ---
