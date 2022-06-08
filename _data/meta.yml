@@ -9,15 +9,7 @@ schema:
   name: SacConnects
   social: null
   phone: null
-  hours:
-    ? days
-    ? opens
-    ? closes
-  location:
-    ? address
-    ? city
-    ? state
-    ? zip
+  
   type: Organization
   image: null
   email: nancy@sacconnects.net

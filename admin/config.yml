@@ -366,40 +366,6 @@ collections:
         hint: 'Paste in your social media profiles here. Add a comma after each to add another profile'
         widget: 'list' 
         required: false
-      - name: 'location'
-        label: 'Business Location'
-        widget: 'object'
-        required: false
-        fields:
-        - name: 'address'
-          label: 'Address'
-          widget: 'string'
-          required: false
-        - name: 'city'
-          label: 'City'
-          widget: 'string'
-          required: false
-        - name: 'zip'
-          label: 'Zip'
-          widget: 'string'
-          required: false
-      - name: 'hours'
-        label: 'Business Hours'    
-        widget: 'object'
-        fields: 
-        - name: 'days'
-          label: "Days"
-          hint: 'Type in the days of the week you are operating with a comma after each'
-          widget: 'list'
-          required: false
-        - name: 'opens'
-          label: 'Opening time of your business'
-          widget: 'string'
-          required: false
-        - name: 'closes'
-          label: 'Closing time of your business'
-          widget: 'string'
-          required: false
 
 
                   
