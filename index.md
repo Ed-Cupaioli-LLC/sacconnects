@@ -68,7 +68,7 @@ reviews:
     - client: triumph-cancer-foundation
     - client: nehemiah-community-foundation
     - client: blue-line-arts
+    - client: touro-university
     - client: susan-g-komen-sac-valley
     - client: red-rover
-    - client: ddso
 ---
