@@ -1,7 +1,7 @@
 ---
 title: Blue Line Arts
 logo: /assets/images/bla-2018-logo-01.png
-site: https://www.bluelinearts.org/
+site: https://www.bluelinearts.org
 review:
   text: Nancy assisted our organization with Board Development Training as a
     contractor in 2018 & 2019.  She is well organized, enthusiastic,
